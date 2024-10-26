@@ -4426,9 +4426,11 @@
       // Toggle the mode
       this.mode = !this.mode;
       // Reset to first card to reflect mode change
+      this.correct = 0;
+      this.totalAnswered = 0;
+      this.selectedChoice = null;
       this.currentCard = 1;
       this.isAnswered = false;
-      this.selectedChoice = null;
     },
     // Shuffle array method to randomize flashcards
     shuffleArray(array) {
